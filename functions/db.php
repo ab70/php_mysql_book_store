@@ -7,4 +7,13 @@
 	if (!$conn) {
 		echo 'Failed to connect with database';
 	}
+
+// $conn = new mysqli("localhost","root","","book_store");
+
+// // Check connection
+// if ($conn -> connect_errno) {
+//   echo "Failed to connect to MySQL: " . $conn -> connect_error;
+//   exit();
+// }
+
  ?>

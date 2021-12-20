@@ -2,8 +2,8 @@
 <?php 
     ob_start();
         include("../header/header.php");
-        include("../../functions/db.php");
         include("../../functions/functions.php");
+        
 
 ?>
 
@@ -54,6 +54,7 @@
                         $_SESSION['user_id'] = $row['uid'];
                         $_SESSION['username'] = $row['uname'];
                         $_SESSION['ulogginemail'] = $row['uemail'];
+                        
                     }
                     else{
                         $noAccount = true;
@@ -76,7 +77,7 @@
     
  ?>
 
-<body style="background-image: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=767&q=80');" onload="loaders()">
+<body style="background-image: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=767&q=80'); overflow-x: hidden;" onload="loaders()">
     <div id="loader">
     </div>
     <?php 
